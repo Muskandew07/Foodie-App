@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admin">
+
+
+    <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Admin Home"
+     android:textSize="60sp"
+     android:textStyle="bold"
+     android:gravity="center"
+     android:textColor="#235E36"
+        android:layout_marginTop="440dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD PRODUCT"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:onClick="add_product"
+        android:background="@drawable/buttonshape"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="DELETE PRODUCT"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:onClick="delete_product"
+        android:background="@drawable/buttonshape"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="View Products"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:onClick="view_product"
+        android:background="@drawable/buttonshape"/>
+
+
+</LinearLayout>
+</ScrollView>

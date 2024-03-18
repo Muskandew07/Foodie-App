@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ad_login"
+    android:padding="20dp"
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Login"
+        android:layout_gravity="center"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textColor="#235E36"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="430dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="User name"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/admin_username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/admin_password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:onClick="admin_login"
+        android:background="@drawable/buttonshape"
+        />
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

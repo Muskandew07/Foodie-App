@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ap"
+    android:padding="40dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Add Product"
+        android:textColor="#235E36"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Name"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:text=""
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Price"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/price"
+       />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Description"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:id="@+id/description"
+        />
+
+    <TextView
+        android:layout_width="366dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Click here to select image"
+        android:minHeight="48dp"
+        android:onClick="selectPhoto"
+        android:textSize="18sp"
+        android:textColorHint="@color/black"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="add"
+        android:text="ADD"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape"
+        />
+
+
+</LinearLayout>
+</ScrollView>

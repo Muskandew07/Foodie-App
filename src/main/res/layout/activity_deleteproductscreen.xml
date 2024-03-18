@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/delete_product"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Product"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:layout_marginTop="130dp"
+        android:textColor="#235E36"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Product"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:id="@+id/spinner"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/productDetails"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Delete"
+        android:textSize="25dp"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/delete"
+        android:onClick="delete_product"/>
+
+</LinearLayout>
+</ScrollView>

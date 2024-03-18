@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userselection">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#235E36"
+        android:layout_marginTop="500dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Select User"
+        android:textColor="#CB292B"
+        android:fontFamily="sans-serif-condensed"
+        android:textFontWeight="600"
+        android:textSize="35sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_type"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textSize="30sp"
+            android:checked="true"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/admin"
+            android:layout_gravity="center"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Buyer"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/buyer"
+            />
+
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape"
+        android:text="Select"
+        android:textSize="25dp"
+        android:onClick="Select_user"
+        />
+
+
+</LinearLayout>
+</ScrollView>
